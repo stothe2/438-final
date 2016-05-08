@@ -1,1 +1,2 @@
 gwas_catalog_v1.0.1-associations_e84_r2016-04-24.tsv filter=lfs diff=lfs merge=lfs -text
+GTEx_Data_V6_Annotations_SubjectPhenotypesDS.txt filter=lfs diff=lfs merge=lfs -text
