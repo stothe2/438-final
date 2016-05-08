@@ -1,0 +1,1 @@
+gwas_catalog_v1.0.1-associations_e84_r2016-04-24.tsv filter=lfs diff=lfs merge=lfs -text
