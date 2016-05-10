@@ -95,6 +95,9 @@ df.q <- mutate(df.q, mean=.rowMeans(t.E.q[,1:75], dim(t.E.q)[1], 75)) # Expressi
 df.q <- arrange(df.q, desc(mean)) # Sort in descending order of means
 df.final <- df.q[1:(dim(df.q)[1]-48),] # Remove bottom 20% aging genes (~48 genes)
 
+print("Aging genes")
+print(select(df.final, age.genes, qvals, age.coefs))
+
 #--------------------------------------------------------------------
 # Q-Q and other plots for a strongly expressed (low qvalue) aging gene
 #--------------------------------------------------------------------
@@ -119,3 +122,4 @@ kegg.genes <- read.delim("davidtools/kegg_genes.txt") # From David tools
 
 d <- select(disease.genes, Genes, Count, Term, PValue, FDR)
 k <- select(kegg.genes, Genes, Count, Term, PValue, FDR)
+
