@@ -1,0 +1,5 @@
+## Usage
+
+```
+Rscript run.R
+```
